@@ -1,0 +1,49 @@
+$text-color: #97989a;
+$text-color-w: #fff;
+$text-ff: Tahoma, sans-serif;
+$top:175px;
+$bottom: 84px;
+$blue-bgr:#0072ff;
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+
+$zindex-navbar:            1000;
+$zindex-dropdown:          1000;
+$zindex-popover:           1010;
+$zindex-tooltip:           1030;
+$zindex-navbar-fixed:      1030;
+$zindex-modal-background:  1040;
+$zindex-modal:             1050;
+
+// Popovers
+// -------------------------
+$popover-bg:                          #dfdfdf;
+$popover-arrow-width:                 5px;
+$popover-arrow-color:                 #fff;
+$popover-arrow-outer-width:           $popover-arrow-width + 1;
+$popover-arrow-outer-color:           rgba(0,0,0,.25);
+$popover-arrow-outer-fallback-color:  #999;
+
+
+// Modals
+// -------------------------
+$modal-inner-padding:         20px;
+
+$modal-title-padding:         15px;
+$modal-title-line-height:     20/14;
+
+$modal-content-bg:            #fff;
+$modal-content-border-color:  rgba(0,0,0,.2);
+$modal-content-fallback-border-color:          #999;
+
+$modal-backdrop-bg:           #000;
+$modal-backdrop-opacity:      .7;
+$modal-header-border-color:   #e5e5e5;
+$modal-footer-border-color:   $modal-header-border-color;
+
+$modal-lg:                    900px;
+$modal-sm:                    300px;

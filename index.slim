@@ -1,0 +1,256 @@
+doctype html
+html
+  head
+      meta charset="utf-8"
+      title LO
+      link href="./css/style.css" rel="stylesheet"
+      script data-main="js/app" src="./js/lib/require.js"
+  body
+    #top
+      .controls
+        span.bar
+          span.up
+      .row
+        .win-control
+          span.ico.dashboard
+          span.ico.resize-small
+        .personal-panel
+          .account
+            span 
+              |
+                На счету:
+              em 1 800 Р
+          .msg
+            span
+              |
+                Новых:
+              em 12
+          .login
+            .dropdown
+              span
+                |
+                  Александр
+                b.caret
+              ul
+                li 1
+                li 2
+      .row
+        .centr
+          .row
+            h1.book-name
+              |
+                Название Книги
+              span.ico.settings
+            .book-control
+              a.btn Сохранить как
+              a.btn Опубликовать
+              a.collapse
+                span.collapse-bar
+                  .icon-bar
+                  .icon-bar
+                  .icon-bar
+          .row
+            .dropdown
+              span.spec
+                |
+                  Детали
+                b.caret
+              ul
+                li 1
+                li 2
+    #left-side
+      .content
+        ul.prev-pages
+          - 2.times do |i|
+            li
+              .prev-page
+                img
+              span.num-page="#{i+1}"
+    #right-side
+      .content
+        .media
+          ul
+            li
+              span.ico.prezent
+            li
+              span.ico.micro
+            li
+              span.ico.camera
+            li
+              span.ico.pictr
+        .info
+          ul
+            li 
+              span Выбрать шаблон
+            li 
+              span Добавить теги 
+            li 
+              span Добавить контент
+            li.state-quest
+              span Демо контент
+    #main
+      .content.page_container
+        .page
+          .container
+            h2 Main content
+            - 1.times do |i|
+              p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi eget elit. Donec pulvinar. Fusce non est ac libero blandit laoreet. Pellentesque iaculis erat. Cras ullamcorper. Vivamus et nibh. Quisque vel leo vitae felis hendrerit fermentum. Donec consectetuer, nunc id mattis elementum, lacus ligula fringilla leo, quis varius lacus turpis sit amet massa. Morbi accumsan ante suscipit ipsum. Curabitur non tellus nec metus venenatis iaculis. Donec tempor nunc. Mauris sit amet erat. Vestibulum sed nulla ac nisl dapibus porta. Praesent a nisi quis nisl cursus tempor. Praesent semper laoreet nisl. Donec id urna.
+          .page-tools
+            span.ico.select
+            span.ico.text
+    #footer
+      .content
+        .filter-page
+          ul
+            li
+              span Главы
+            li
+              span Тизеры
+            li
+              span Отбивки
+            li
+              span Демо
+            li.selected
+              span Страницы
+          b.caret
+        .tools
+          ul.editor
+            li 
+              span 
+                |
+                  Tahoma
+                b.caret
+            li 
+              span 
+                |
+                  Normal
+                b.caret
+            li 
+              span 
+                |
+                  14 pt
+                b.caret
+            li 
+              span.ico.text-color
+            li 
+              span.ico.bgr-color
+                i
+            li 
+              span.ico.text-al-left
+              span.ico.text-al-center
+              span.ico.text-al-right
+            li 
+              span.ico.column-one
+              span.ico.column-two
+            li
+              span 
+                |
+                  Стили
+                b.caret
+            li 
+              span.ico.undo
+          .search
+            input placeholder="Найти текст"
+.popover.top.search-result.blue-title.dn
+  .arrow
+  .popover-content
+    dl
+      dt В тексте:
+      dd
+        strong Desire For A Beter 
+        a стр. 61
+      dd
+        strong Desire For A Beter 
+        a стр. 121
+      dd
+        strong Desire For A Beter 
+        a стр. 139
+    dl
+      dt В заголовках:
+      dd 
+        strong Desire For A Beter 
+        a стр. 61
+    dl
+      dt В подписях:
+      dd
+        strong Desire For A Beter 
+        a стр. 115
+  h3.popover-title Все результаты     
+.popover.left.medialib.pic.dn
+  .arrow
+  .popover-content
+    .dir
+      ul
+        li.active
+          span Photobank
+          ul
+            li.active
+              .stick
+              span Sunlowers
+            li 
+              .stick
+              span Sky
+        li 
+          span Book Photos
+          ul
+            li 
+              .stick
+              span Graphics
+            li 
+              .stick
+              span Minimal
+        li 
+          span Book Photos
+        li 
+          span Photobank
+          ul
+            li 
+              .stick
+              span Graphics
+            li 
+              .stick
+              span Photos
+            li 
+              .stick
+              span Pics
+        li 
+          span Fotolia
+          ul
+            li 
+              .stick
+              span Book Photos
+        li 
+          span Photobank
+          ul
+            li 
+              .stick
+              span Graphics
+            li 
+              .stick
+              span Photos
+            li 
+              .stick
+              span Pics
+        li 
+          span Photobank
+          ul
+            li 
+              .stick
+              span Graphics
+            li 
+              .stick
+              span Photos
+            li 
+              .stick
+              span Pics
+    .main
+      ul.filter
+        li: a.active По имени
+        li: a По дате
+        li: a По размеру
+      ul.select-media
+        - 2.times do |i|
+          li
+            img src="./img/example.jpg"
+            input type="radio" hidden="hidden" name="media-pic" id="media-pic-#{i}"
+            label for="media-pic-#{i}" #{i+1}.jpg
