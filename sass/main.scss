@@ -2167,30 +2167,34 @@ a.change {
 		padding-top: 2px;
 		padding-bottom: 2px;
 		p {
-			padding: 2px 2px 2px 0;
-			float: left;
-			position: relative;
-			z-index: 20;
-			background: #fff;
+			padding: 2px 30px 2px 0;
 			font-size: 22px;
+			position: relative;
+			.toc_text {
+				background: #fff;
+				position: relative;
+				padding-right: 2px;
+				z-index: 20;
+			}
 		}
 		.toc_num_page {
 			float: right;
 			font-size: 14px;
 			font-family: Tahoma, Helvetica, sans-serif;
 			color:#666;
-			position: relative;
+			position: absolute;
 			z-index: 15;
 			padding-left: 2px;
 			background: #fff;
-			top: 1px;
+			bottom: 1px;
+			right: 0;
 		}
 		.dotted_line {
 			display: block;
 			border-bottom: 1px dotted;
 			width: 100%;
 			position: absolute;
-			top: 27px;
+			bottom: 11px;
 			left: 0;
 			z-index: 10;
 		}
