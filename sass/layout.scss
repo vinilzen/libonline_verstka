@@ -15,6 +15,7 @@
 	bottom: $bottom;
 	overflow-x: hidden;
 	overflow-y: auto;
+	width: 900px;
 	min-width: 600px;
 	.content {
 		color:#000;
@@ -37,7 +38,7 @@
 	top: $top - 10px;
 	left: 20px;
 	bottom: $bottom;
-	width: 160px;
+	width: 161px;
 	overflow: auto;
 	@include circle-scroll(24px);
 	.content {
@@ -51,7 +52,7 @@
 	right: 30px;
 	bottom: 33px;
 	width: 113px;
-	overflow: hidden;
+	// overflow: hidden;
 	.content {
 		padding: 0;
 		display: table;
@@ -62,6 +63,30 @@
 #footer {
 	position: absolute;
 	left: 10px;
-	bottom: 50px;
+	bottom: 20px;
 	height: 30px;
+	right: 143px;
+}
+.central-wall {
+	position: absolute;	
+	top: $top - 10px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+#upload {
+	@extend .central-wall;
+	height: 362px;
+}
+#select-template {
+	@extend .central-wall;
+}
+.well {
+	width: 895px;
+	min-height: 362px;
+	margin: 30px auto 0 auto;
+	box-shadow: 2px 2px 12px 2px #000;
+	background-color: #dfdfdf;
+	border-radius: 10px;
 }

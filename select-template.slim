@@ -1,0 +1,196 @@
+doctype html
+html
+  head
+      meta charset="utf-8"
+      title LO - Выбор шаблона
+      link href="./css/main.css" rel="stylesheet"
+  body
+    #top
+      .controls
+        span.bar
+      .row
+        .win-control
+          span.ico.dashboard
+        .personal-panel
+          .account
+            span 
+              |
+                На счету:
+              em 1 800 Р
+          .msg
+            span
+              |
+                Новых:
+              em 12
+          .login
+            .dropdown
+              span
+                |
+                  Александр
+                b.caret
+              ul
+                li 1
+                li 2
+
+    #select-template
+      .row
+        h1.upload_files Загрузка файла
+      .row
+        .additional-title
+          h2.select-templ Загрузка файла
+          span.arrow
+          h2.select-templ
+            strong Выбор шаблона оформления
+      .row
+        .well
+          #filter-theme
+            #accordion.panel-group
+              #collapseOne.panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" Популярные
+                    a.minus href="#collapseOne"
+                .panel-collapse.collapse
+                    .panel-body
+                      ul
+                        li 
+                          a Детектив
+                        li 
+                          a Триллер
+                        li 
+                          a Роман
+                        li 
+                          a Гараж
+                        li 
+                          a Ретро
+                        li 
+                          a Модные
+              #collapseTwo.panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" Минимализм
+                    a.minus href="#collapseTwo"
+                .panel-collapse.collapse
+                    .panel-body
+                      ul
+                        li 
+                          a Гараж
+                        li 
+                          a Ретро
+                        li 
+                          a Модные
+              #collapseThree.panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" Другие
+                    a.minus href="#collapseThree"
+                .panel-collapse.collapse
+                    .panel-body
+                      ul
+                        li 
+                          a Роман
+                        li 
+                          a Гараж
+                        li 
+                          a Ретро
+                        li 
+                          a Модные
+                        li 
+                          a Детектив
+                        li 
+                          a Триллер
+          #preview-theme
+            .list_theme
+              ul.prev-pages.custom-radio-input
+                li
+                  .prev-page
+                    img src="/img/sempl_prev1.png"
+                  .prev-page
+                    img src="/img/sempl_prev1.png"
+                  .prev-page
+                    img src="/img/sempl_prev1.png"
+                  span Adobe Illustrator
+                  input type="radio" hidden="hidden" id="media-pic-1" name="media-pic"
+                  label for="media-pic-1"
+                li
+                  .prev-page
+                    img src="/img/sempl_prev2.png"
+                  .prev-page
+                    img src="/img/sempl_prev2.png"
+                  .prev-page
+                    img src="/img/sempl_prev2.png"
+                  span Adobe Illustrator
+                  input type="radio" hidden="hidden" id="media-pic-2" name="media-pic"
+                  label for="media-pic-2"
+                li
+                  .prev-page
+                    img src="/img/sempl_prev3.png"
+                  .prev-page
+                    img src="/img/sempl_prev3.png"
+                  .prev-page
+                    img src="/img/sempl_prev3.png"
+                  span Adobe Illustrator
+                  input type="radio" hidden="hidden" id="media-pic-3" name="media-pic"
+                  label for="media-pic-3"
+                li
+                  .prev-page
+                    img src="/img/sempl_prev4.png"
+                  .prev-page
+                    img src="/img/sempl_prev4.png"
+                  .prev-page
+                    img src="/img/sempl_prev4.png"
+                  span Adobe Illustrator
+                  input type="radio" hidden="hidden" id="media-pic-4" name="media-pic"
+                  label for="media-pic-4"
+                li
+                  .prev-page
+                    img src="/img/sempl_prev5.png"
+                  .prev-page
+                    img src="/img/sempl_prev5.png"
+                  .prev-page
+                    img src="/img/sempl_prev5.png"
+                  span Adobe Illustrator
+                  input type="radio" hidden="hidden" id="media-pic-5" name="media-pic"
+                  label for="media-pic-5"
+                li
+                  .prev-page
+                    img src="/img/sempl_prev6.png"
+                  .prev-page
+                    img src="/img/sempl_prev6.png"
+                  .prev-page
+                    img src="/img/sempl_prev6.png"
+                  span Adobe Illustrator
+                  input type="radio" hidden="hidden" id="media-pic-6" name="media-pic"
+                  label for="media-pic-6"
+                li
+                  .prev-page
+                    img src="/img/sempl_prev7.png"
+                  .prev-page
+                    img src="/img/sempl_prev7.png"
+                  .prev-page
+                    img src="/img/sempl_prev7.png"
+                  span Adobe Illustrator
+                  input type="radio" hidden="hidden" id="media-pic-7" name="media-pic"
+                  label for="media-pic-7"
+                li
+                  .prev-page
+                    img src="/img/sempl_prev8.png"
+                  .prev-page
+                    img src="/img/sempl_prev8.png"
+                  .prev-page
+                    img src="/img/sempl_prev8.png"
+                  span Adobe Illustrator
+                  input type="radio" hidden="hidden" id="media-pic-8" name="media-pic"
+                  label for="media-pic-8"
+          .separation-line
+          .option.custom-radio-input.active-blue
+            input type="radio" hidden="hidden" id="option-demo-true" name="option-demo"
+            label for="option-demo-true"
+              |
+                Размещать в книге демо-контент
+              span.reference-info
+                em ?
+            input type="radio" hidden="hidden" id="option-demo-false" name="option-demo" checked="checked"
+            label for="option-demo-false" Не размещать в книге демо-контент
+
+        .button.upload_book Далее

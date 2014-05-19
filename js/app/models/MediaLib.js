@@ -65,7 +65,7 @@ define(function (require) {
 			this.$el.html(
 				'<ul><li class="active">'+
 					'<span>Main</span>'+
-					'<ul></ul>'+
+					'<ul class="user_dir"></ul>'+
 				'</li></ul>'
 			);
 			return this;
@@ -101,11 +101,19 @@ define(function (require) {
         		if (model.get('type') != 'dir') {
         			this.view.medialist.append(model.view.el);
         		} else {
-        			$('ul ul', this.dir_view.$el).append(model.view.el);
+        			$('.user_dir', this.dir_view.$el).append(model.view.el);
         		}
         	}, this);
             
             $('.popover .popover-content').html(this.dir_view.el).append(this.view.el);
+        },
+
+        success:function(){
+            this.render();
+        },
+
+        err:function(){
+        	$('.popover .popover-content').html('Ошибка загрузки библиотеки');
         }
 
     });

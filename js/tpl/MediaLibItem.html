@@ -1,3 +1,3 @@
-<img src="./img/<%= name %>">
-<input hidden="hidden" id="media-pic-0" name="media-pic" type="radio">
-<label for="media-pic-0"><%= name %></label>
+<img src="<%= full_path %><%= name %>" title="<%= name %>|<%= size %>|<%= time %>">
+<input hidden="hidden" id="media-pic-<%= name %>" name="media-pic" data-src="<%= full_path %><%= name %>" type="radio">
+<label for="media-pic-<%= name %>"><%= name %></label>

@@ -2,9 +2,34 @@ $text-color: #97989a;
 $text-color-w: #fff;
 $text-ff: Tahoma, sans-serif;
 $top:175px;
-$bottom: 84px;
+$bottom: 50px;
 $blue-bgr:#0072ff;
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+$brand-primary:         #428bca !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+
+
+
+//** Border color for table and cell borders.
+$table-border-color:            #ddd !default;
 
 // Z-index master list
 // -------------------------
@@ -47,3 +72,84 @@ $modal-footer-border-color:   $modal-header-border-color;
 
 $modal-lg:                    900px;
 $modal-sm:                    300px;
+
+
+//== Progress bars
+//
+//##
+
+//** Background color of the whole progress component
+$progress-bg:                 #f5f5f5 !default;
+//** Progress bar text color
+$progress-bar-color:          #fff !default;
+
+//** Default progress bar color
+$progress-bar-bg:             $brand-primary !default;
+//** Success progress bar color
+$progress-bar-success-bg:     $brand-success !default;
+//** Warning progress bar color
+$progress-bar-warning-bg:     $brand-warning !default;
+//** Danger progress bar color
+$progress-bar-danger-bg:      $brand-danger !default;
+//** Info progress bar color
+$progress-bar-info-bg:        $brand-info !default;
+
+
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #cc0000 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+//== Panels
+//
+//##
+
+$panel-bg:                    #fff !default;
+$panel-body-padding:          15px !default;
+$panel-border-radius:         $border-radius-base !default;
+
+//** Border color for elements within panels
+$panel-inner-border:          #ddd !default;
+$panel-footer-bg:             #f5f5f5 !default;
+
+$panel-default-text:          $gray-dark !default;
+$panel-default-border:        #ddd !default;
+$panel-default-heading-bg:    #f5f5f5 !default;
+
+$panel-primary-text:          #fff !default;
+$panel-primary-border:        $brand-primary !default;
+$panel-primary-heading-bg:    $brand-primary !default;
+
+$panel-success-text:          $state-success-text !default;
+$panel-success-border:        $state-success-border !default;
+$panel-success-heading-bg:    $state-success-bg !default;
+
+$panel-info-text:             $state-info-text !default;
+$panel-info-border:           $state-info-border !default;
+$panel-info-heading-bg:       $state-info-bg !default;
+
+$panel-warning-text:          $state-warning-text !default;
+$panel-warning-border:        $state-warning-border !default;
+$panel-warning-heading-bg:    $state-warning-bg !default;
+
+$panel-danger-text:           $state-danger-text !default;
+$panel-danger-border:         $state-danger-border !default;
+$panel-danger-heading-bg:     $state-danger-bg !default;

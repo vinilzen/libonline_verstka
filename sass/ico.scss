@@ -1,0 +1,134 @@
+.ico {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-top: 1px;
+	line-height: 14px;
+	vertical-align: text-top;
+	background-repeat: no-repeat;
+	cursor:pointer;
+	&.dashboard {
+		background-image: url("../img/dashboard.png");
+		background-position: 0 0;
+		width: 25px;
+	}
+	&.resize-small {
+		background-image: url("../img/resize-small.png");
+		background-position: 0 0;
+		margin-left: 12px;
+	}
+	&.settings {
+		background-image: url("../img/settings.png");
+		background-position: 0 0;
+		width: 22px;
+		height: 22px;
+		margin-top: 7px;
+		margin-left: 11px;
+		position: absolute;
+	}
+	&.prezent {
+		width: 28px;
+		height: 29px;
+		background-image: url("../img/prezent.png");
+	}
+	&.micro {
+		width: 18px;
+		height: 31px;
+		background-image: url("../img/micro.png");
+	}
+	&.camera {
+		width: 31px;
+		height: 25px;
+		background-image: url("../img/camera.png");
+	}
+	&.youtube {
+		width: 31px;
+		height: 25px;
+		background-image: url("../img/youtube.png");
+	}
+	&.pictr {
+		width: 27px;
+		height: 23px;
+		background-image: url("../img/pictr.png");
+	}
+	&.undo {
+		width: 27px;
+		height: 23px;
+		background-image: url("../img/undo.png");
+		background-position: 5px 2px;
+	}
+	&.text-color {
+		width: 27px;
+		height: 20px;
+		background-image: url("../img/text-color.png");
+		background-position: 6px 2px;
+		i {
+			color:#363739;
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			padding: 1px;
+			background-color: #97989a;
+		}
+	}
+	&.bgr-color {
+		width: 21px;
+		i {
+			margin: 3px 0 0 2px;
+			display: inline-block;
+			border-radius:1px;
+			width: 21px;
+			height: 11px;
+			background-color: #6d6e71;
+		}
+	}
+	&.text-al-left {
+		width: 20px;
+		height: 15px;
+		background-image: url("../img/text-al.png");
+		background-position: 0px 0px;
+		margin-right: 11px;
+	}
+	&.text-al-center {
+		width: 20px;
+		height: 15px;
+		background-image: url("../img/text-al.png");
+		background-position: -30px 0px;
+		margin-right: 11px;
+	}
+	&.text-al-right {
+		width: 20px;
+		height: 15px;
+		margin-right: 11px;
+		background-image: url("../img/text-al.png");
+		background-position: -60px 0px;
+	}
+	&.text-al-justify {
+		width: 20px;
+		height: 15px;
+		background-image: url("../img/text-al.png");
+		background-position: -90px 0px;
+	}
+	&.column-one {
+		width: 19px;
+		height: 15px;
+		background-image: url("../img/column.png");
+		background-position: 0px 0px;
+		margin-right: 10px;
+	}
+	&.column-two {		
+		width: 19px;
+		height: 15px;
+		background-image: url("../img/column.png");
+		background-position: -29px 0px;
+	}
+}
+.icon-bar {
+	width: 25px;
+	height: 5px;
+	background: $text-color;
+	border-radius: 3px;
+	margin-top: 1px;
+	position: relative;
+	top:2px;
+}

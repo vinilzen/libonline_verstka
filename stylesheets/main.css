@@ -1,0 +1,2073 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003137}}
+.clearfix:before, .modal-footer:before, .clearfix:after, .modal-footer:after {
+  content: " ";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003141}}
+.clearfix:after, .modal-footer:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003145}}
+.dn, .hide {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000311}}
+.modal-open {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000316}}
+.modal {
+  display: none;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000333}}
+.modal.fade .modal-dialog {
+  transform: translate(0, -25%);
+  transition: transform "0.3s ease-out";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000337}}
+.modal.in .modal-dialog {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000343}}
+.modal-dialog {
+  position: relative;
+  width: 600px;
+  margin: 30px auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000352}}
+.modal-content {
+  position: relative;
+  background-color: white;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000365}}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000374}}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000375}}
+.modal-backdrop.in {
+  opacity: 0.7;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000380}}
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.42857px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000386}}
+.modal-header .close {
+  margin-top: -2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000391}}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\0000398}}
+.modal-body {
+  position: relative;
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\00003104}}
+.modal-footer {
+  margin-top: 15px;
+  padding: 19px 20px 20px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\00003112}}
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\00003117}}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/modal\.scss}line{font-family:\00003121}}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\000031}}
+#top {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+  padding: 37px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\0000310}}
+#main {
+  position: absolute;
+  top: 165px;
+  left: 200px;
+  right: 170px;
+  bottom: 50px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 900px;
+  min-width: 600px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\0000320}}
+#main .content {
+  color: #000;
+  padding: 0 0 10px 0;
+  margin-right: 0;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\0000326}}
+#main .content .page .content {
+  position: relative;
+  margin: 85px 145px;
+  text-align: left;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000330}}
+#main::-webkit-scrollbar {
+  width: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000333}}
+#main::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(11.28px, transparent), color-stop(12px, #000000), color-stop(12px, #000000), color-stop(12.72px, transparent), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: -moz-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: -o-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000344}}
+#main::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(radial, 50%, 0, 50%, 24, color-stop(0%, #9f9ea3), color-stop(40.0%, #8f9aa8), color-stop(45%, rgba(0, 0, 0, 0.2)), color-stop(55.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: -moz-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: -o-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  min-height: 24px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\0000336}}
+#left-side {
+  position: absolute;
+  top: 165px;
+  left: 20px;
+  bottom: 50px;
+  width: 160px;
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000330}}
+#left-side::-webkit-scrollbar {
+  width: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000333}}
+#left-side::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(11.28px, transparent), color-stop(12px, #000000), color-stop(12px, #000000), color-stop(12.72px, transparent), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: -moz-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: -o-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000344}}
+#left-side::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(radial, 50%, 0, 50%, 24, color-stop(0%, #9f9ea3), color-stop(40.0%, #8f9aa8), color-stop(45%, rgba(0, 0, 0, 0.2)), color-stop(55.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: -moz-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: -o-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  min-height: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\0000344}}
+#left-side .content {
+  padding-left: 5px;
+  padding-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\0000349}}
+#right-side {
+  position: absolute;
+  top: 165px;
+  right: 30px;
+  bottom: 33px;
+  width: 113px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\0000356}}
+#right-side .content {
+  padding: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\0000363}}
+#footer {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  height: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/layout\.scss}line{font-family:\0000369}}
+#upload {
+  position: absolute;
+  top: 165px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  /* line 11, ../sass/progress-bars.scss */
+  from {
+    background-position: 40px 0;
+  }
+
+  /* line 12, ../sass/progress-bars.scss */
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  /* line 17, ../sass/progress-bars.scss */
+  from {
+    background-position: 40px 0;
+  }
+
+  /* line 18, ../sass/progress-bars.scss */
+  to {
+    background-position: 0 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/progress-bars\.scss}line{font-family:\0000327}}
+.progress {
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/progress-bars\.scss}line{font-family:\0000337}}
+.progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  -moz-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/progress-bars\.scss}line{font-family:\0000351}}
+.progress-striped .progress-bar {
+  background-color: #555555;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  background-size: 40px 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/progress-bars\.scss}line{font-family:\0000357}}
+.progress.active .progress-bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/progress-bars\.scss}line{font-family:\0000366}}
+.progress-bar-success {
+  background-color: #5cb85c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003131}}
+.progress-striped .progress-bar-success {
+  background-color: #555555;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/progress-bars\.scss}line{font-family:\0000370}}
+.progress-bar-info {
+  background-color: #5bc0de;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003131}}
+.progress-striped .progress-bar-info {
+  background-color: #555555;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/progress-bars\.scss}line{font-family:\0000374}}
+.progress-bar-warning {
+  background-color: #f0ad4e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003131}}
+.progress-striped .progress-bar-warning {
+  background-color: #555555;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/progress-bars\.scss}line{font-family:\0000378}}
+.progress-bar-danger {
+  background-color: #d9534f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003131}}
+.progress-striped .progress-bar-danger {
+  background-color: #555555;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\000033}}
+small,
+.small {
+  font-size: 85%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\000036}}
+cite {
+  font-style: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\000039}}
+.text-left {
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\0000310}}
+.text-right {
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\0000311}}
+.text-center {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\0000312}}
+.text-justify {
+  text-align: justify;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\0000316}}
+.text-primary {
+  color: #428bca;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003122}}
+.text-primary a:hover {
+  color: #3071a9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\0000319}}
+.text-success {
+  color: #3c763d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003122}}
+.text-success a:hover {
+  color: #2b542c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\0000322}}
+.text-info {
+  color: #31708f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003122}}
+.text-info a:hover {
+  color: #245269;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\0000325}}
+.text-warning {
+  color: #8a6d3b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003122}}
+.text-warning a:hover {
+  color: #66512c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/type\.scss}line{font-family:\0000328}}
+.text-danger {
+  color: #a94442;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\00003122}}
+.text-danger a:hover {
+  color: #843534;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/button\.scss}line{font-family:\000032}}
+.btn {
+  border: 1px solid #494949;
+  display: inline-block;
+  border-radius: 19px;
+  padding: 0 19px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #97989a;
+  font-family: Tahoma, sans-serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/button\.scss}line{font-family:\0000313}}
+.btn:hover {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/button\.scss}line{font-family:\0000316}}
+.btn:first-child {
+  margin-right: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/button\.scss}line{font-family:\0000321}}
+.button {
+  font-size: 12px;
+  color: #4b4b49;
+  height: 29px;
+  line-height: 29px;
+  padding: 0 22px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #a3a4a6;
+  background: linear-gradient(to top, #97989a 50%, #a3a4a6 50%);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\000031}}
+.ico {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-top: 1px;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000310}}
+.ico.dashboard {
+  background-image: url("../img/dashboard.png");
+  background-position: 0 0;
+  width: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000315}}
+.ico.resize-small {
+  background-image: url("../img/resize-small.png");
+  background-position: 0 0;
+  margin-left: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000320}}
+.ico.settings {
+  background-image: url("../img/settings.png");
+  background-position: 0 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 7px;
+  margin-left: 11px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000328}}
+.ico.prezent {
+  width: 28px;
+  height: 29px;
+  background-image: url("../img/prezent.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000333}}
+.ico.micro {
+  width: 18px;
+  height: 31px;
+  background-image: url("../img/micro.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000338}}
+.ico.camera {
+  width: 31px;
+  height: 25px;
+  background-image: url("../img/camera.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000343}}
+.ico.pictr {
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/pictr.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000348}}
+.ico.undo {
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/undo.png");
+  background-position: 5px 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000354}}
+.ico.bgr-color {
+  width: 27px;
+  height: 20px;
+  background-image: url("../img/text-color.png");
+  background-position: 6px 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000359}}
+.ico.bgr-color i {
+  color: #363739;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  padding: 1px;
+  background-color: #97989a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000368}}
+.ico.text-color {
+  width: 21px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000370}}
+.ico.text-color i {
+  margin: 3px 0 0 2px;
+  display: inline-block;
+  border-radius: 1px;
+  width: 21px;
+  height: 11px;
+  background-color: #6d6e71;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000379}}
+.ico.text-al-left {
+  width: 20px;
+  height: 15px;
+  background-image: url("../img/text-al.png");
+  background-position: 0px 0px;
+  margin-right: 11px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000386}}
+.ico.text-al-center {
+  width: 20px;
+  height: 15px;
+  background-image: url("../img/text-al.png");
+  background-position: -30px 0px;
+  margin-right: 11px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\0000393}}
+.ico.text-al-right {
+  width: 20px;
+  height: 15px;
+  margin-right: 11px;
+  background-image: url("../img/text-al.png");
+  background-position: -60px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\00003100}}
+.ico.text-al-justify {
+  width: 20px;
+  height: 15px;
+  background-image: url("../img/text-al.png");
+  background-position: -90px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\00003106}}
+.ico.column-one {
+  width: 19px;
+  height: 15px;
+  background-image: url("../img/column.png");
+  background-position: 0px 0px;
+  margin-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\00003113}}
+.ico.column-two {
+  width: 19px;
+  height: 15px;
+  background-image: url("../img/column.png");
+  background-position: -29px 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/ico\.scss}line{font-family:\00003120}}
+.icon-bar {
+  width: 25px;
+  height: 5px;
+  background: #97989a;
+  border-radius: 3px;
+  margin-top: 1px;
+  position: relative;
+  top: 2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000036}}
+html {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000310}}
+body {
+  font-family: Verdana;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /* fallback */
+  background-color: #4d4e51;
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1b1a1f), to(#4d4e51));
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #1b1a1f, #4d4e51);
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #1b1a1f, #4d4e51);
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #1b1a1f, #4d4e51);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000335}}
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000342}}
+.container h2 {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000347}}
+.container h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000354}}
+strong {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000358}}
+input:active, textarea:active {
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000362}}
+:focus {
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000366}}
+.content {
+  padding: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000370}}
+.row {
+  float: left;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000373}}
+.row :before, .row :after {
+  display: table;
+  box-sizing: border-box;
+  content: " ";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000378}}
+.row :after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000383}}
+.win-control {
+  float: left;
+  padding: 0 0 0 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\0000388}}
+#color_property {
+  float: left;
+  width: 100px;
+  line-height: 29px;
+  height: 28px;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 1px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003101}}
+.properties {
+  top: -299px;
+  padding-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003106}}
+.collapse {
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003111}}
+.collapse:hover .icon-bar {
+  background: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003116}}
+.collapse-bar {
+  padding: 0px 0 0 20px;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003120}}
+.book-control {
+  float: right;
+  padding-right: 30px;
+  margin-top: -32px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003125}}
+.centr {
+  margin-top: 33px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003128}}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top: 4px solid #97989a;
+  border-right: 4px solid rgba(0, 0, 0, 0);
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  content: "";
+  margin: 8px 0 0 2px;
+  border-bottom-color: #97989a;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003140}}
+.caret.active {
+  border-top: 4px solid #0072ff;
+  border-bottom-color: #0072ff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003145}}
+.controls {
+  position: absolute;
+  left: 50%;
+  top: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003149}}
+.controls .bar {
+  width: 19px;
+  height: 14px;
+  cursor: pointer;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003154}}
+.controls .bar .up {
+  display: block;
+  width: 19px;
+  height: 14px;
+  background: url("../img/up.png") left top no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003159}}
+.controls .bar .up.down {
+  background: url("../img/up_.png") left bottom no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003164}}
+.controls .bar:hover .up {
+  background: url("../img/up.png") left bottom no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003166}}
+.controls .bar:hover .up.down {
+  background: url("../img/up_.png") left top no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003173}}
+.personal-panel {
+  padding: 0 30px 0 0;
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003176}}
+.personal-panel span {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003178}}
+.personal-panel span em {
+  border-bottom: 1px dotted #97989a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003182}}
+.personal-panel .account {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\000034}}
+.personal-panel .account span {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\000036}}
+.personal-panel .account span em {
+  display: inline-block;
+  margin-left: 3px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003184}}
+.personal-panel .account span {
+  width: 128px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003188}}
+.personal-panel .msg {
+  display: inline-block;
+  padding-left: 29px;
+  background: url("../img/msg.png") 0 0 no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\000034}}
+.personal-panel .msg span {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\000036}}
+.personal-panel .msg span em {
+  display: inline-block;
+  margin-left: 3px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003192}}
+.personal-panel .msg span {
+  width: 81px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003196}}
+.personal-panel .login {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003199}}
+.personal-panel .login .dropdown ul {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003205}}
+.book-name {
+  color: white;
+  font-family: Tahoma, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003212}}
+.spec {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  display: block;
+  text-align: center;
+  margin-top: 7px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003217}}
+.spec .caret {
+  margin-top: 7px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003222}}
+.dropdown ul {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003226}}
+.page {
+  display: inline-block;
+  position: relative;
+  width: 830px;
+  height: 1105px;
+  border-radius: 3px;
+  background: #fff;
+  padding: 0;
+  box-shadow: 7px 8px 7px #1a1a1c;
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003238}}
+.prev-pages {
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003240}}
+.prev-pages li {
+  float: left;
+  list-style: none;
+  margin-left: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003246}}
+.prev-pages li .prev-page {
+  width: 57px;
+  height: 80px;
+  border-radius: 2px;
+  box-shadow: 7px 8px 7px #1a1a1c;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003253}}
+.prev-pages li .prev-page img {
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003258}}
+.prev-pages li .num-page {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  color: #fff;
+  background: #97989a;
+  border-radius: 11px;
+  padding: 0 8px;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  margin: 8px auto 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003265}}
+.prev-pages li:hover .num-page {
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF0050B4', endColorstr='#FF0072FF');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0050b4), color-stop(100%, #0072ff));
+  background-image: -webkit-linear-gradient(top, #0050b4 0%, #0072ff 100%);
+  background-image: -moz-linear-gradient(top, #0050b4 0%, #0072ff 100%);
+  background-image: -o-linear-gradient(top, #0050b4 0%, #0072ff 100%);
+  background-image: linear-gradient(top, #0050b4 0%, #0072ff 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003268}}
+.prev-pages li:hover .prev-page::before {
+  box-shadow: inset 0px 0px 0 5000px rgba(151, 152, 154, 0.5), 7px 8px 7px #1a1a1c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003281}}
+.info {
+  display: table-row;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003283}}
+.info ul {
+  width: 113px;
+  margin-left: 20px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003288}}
+.info ul li {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  font-size: 10px;
+  color: #494949;
+  height: 28px;
+  line-height: 28px;
+  border-bottom: 1px solid #494949;
+  width: 100%;
+  background: url(../img/ok.png) no-repeat right 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003297}}
+.info ul li.state-quest {
+  color: #97989a;
+  background: url(../img/quest.png) no-repeat right 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003301}}
+.info ul li:hover {
+  color: #97989a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003304}}
+.info ul li:first-child {
+  border-top: 1px solid #494949;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003310}}
+.media {
+  display: table-row;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003313}}
+.media li {
+  float: right;
+  clear: both;
+  width: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003322}}
+.filter-page {
+  height: 22px;
+  float: left;
+  width: 145px;
+  text-align: center;
+  padding-bottom: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003328}}
+.filter-page ul {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003330}}
+.filter-page ul li {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  color: #fff;
+  background: #97989a;
+  border-radius: 11px;
+  padding: 0 8px;
+  height: 22px;
+  line-height: 22px;
+  display: none;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003335}}
+.filter-page ul li.selected {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003337}}
+.filter-page ul li.selected.active {
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF0050B4', endColorstr='#FF0072FF');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0050b4), color-stop(100%, #0072ff));
+  background-image: -webkit-linear-gradient(top, #0050b4 0%, #0072ff 100%);
+  background-image: -moz-linear-gradient(top, #0050b4 0%, #0072ff 100%);
+  background-image: -o-linear-gradient(top, #0050b4 0%, #0072ff 100%);
+  background-image: linear-gradient(top, #0050b4 0%, #0072ff 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003343}}
+.filter-page .caret {
+  margin-top: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003347}}
+.tools {
+  float: left;
+  left: 120px;
+  position: relative;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003353}}
+.editor {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003355}}
+.editor li {
+  float: left;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #494949;
+  border-radius: 3px;
+  padding: 0 10px;
+  height: 28px;
+  line-height: 28px;
+  margin-left: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003365}}
+.editor li span {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  cursor: pointer;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003369}}
+.editor li span .caret {
+  margin-top: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003372}}
+.editor li span.font-weight {
+  width: 53px;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003376}}
+.editor li span.font-family {
+  width: 60px;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003381}}
+.editor li.selected {
+  background-color: #3b3c3e;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003386}}
+.search {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003390}}
+.search input {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 17px;
+  border: 1px solid #989898;
+  padding-left: 30px;
+  background: url("../img/search.gif") no-repeat 10px 9px white;
+  box-shadow: inset 0px 1px 0 0 #dedede;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003401}}
+.page-tools {
+  position: absolute;
+  width: 35px;
+  height: 71px;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 6px 0 #a3a3a3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003409}}
+.page-tools .ico {
+  margin: 0;
+  border-radius: 0 0 3px 3px;
+  background: #4b4b49;
+  width: 13px;
+  height: 13px;
+  padding: 11px;
+  background-image: url("../img/page-tools.png");
+  background-repeat: no-repeat;
+  background-position: 11px -16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003419}}
+.page-tools .ico:first-child {
+  border-radius: 3px 3px 0 0;
+  background-position: 11px 11px;
+  border-bottom: 1px solid #6a6967;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003427}}
+.popover {
+  width: 250px;
+  min-height: 150px;
+  background-color: #dfdfdf;
+  border-radius: 11px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 100;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003435}}
+.popover .popover-content {
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003438}}
+.popover .popover-title {
+  color: #999999;
+  font-weight: bold;
+  display: inline-block;
+  height: 52px;
+  width: 100%;
+  line-height: 52px;
+  background-color: #0072ff;
+  border-radius: 0  0 11px 11px;
+  text-align: left;
+  text-indent: 19px;
+  position: absolute;
+  bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003452}}
+.popover .arrow, .popover .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003460}}
+.popover .arrow {
+  border-width: 6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003463}}
+.popover .arrow:after {
+  border-width: 5px;
+  content: "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003467}}
+.popover.top {
+  margin-top: -10px;
+  top: -345px;
+  left: -44px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003471}}
+.popover.top .arrow {
+  left: 50%;
+  margin-left: -6px;
+  border-bottom-width: 0;
+  border-top-color: #999999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  bottom: -6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003479}}
+.popover.top .arrow:after {
+  bottom: 1px;
+  margin-left: -5px;
+  border-bottom-width: 0;
+  border-top-color: #dfdfdf;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003487}}
+.popover.left .arrow {
+  top: 50%;
+  right: -6px;
+  margin-top: -6px;
+  border-right-width: 0;
+  border-left-color: #999999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003495}}
+.popover.left .arrow:after {
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #dfdfdf;
+  bottom: -5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003503}}
+.popover.right .arrow {
+  top: 50%;
+  left: -6px;
+  margin-top: -6px;
+  border-left-width: 0;
+  border-right-color: #999999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003511}}
+.popover.right .arrow:after {
+  left: 1px;
+  bottom: -5px;
+  border-left-width: 0;
+  border-right-color: #dfdfdf;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003519}}
+.popover.bottom .arrow {
+  left: 50%;
+  margin-left: -6px;
+  border-top-width: 0;
+  border-bottom-color: #999999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  top: -6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003527}}
+.popover.bottom .arrow:after {
+  top: 1px;
+  margin-left: -5px;
+  border-top-width: 0;
+  border-bottom-color: #dfdfdf;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003534}}
+.popover.search-result {
+  width: 257px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003538}}
+.popover.blue-title.top .arrow:after {
+  border-top-color: #0072ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003539}}
+.popover.blue-title.left .arrow:after {
+  border-top-color: #0072ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003540}}
+.popover.blue-title.right .arrow:after {
+  border-top-color: #0072ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003541}}
+.popover.blue-title.bottom .arrow:after {
+  border-top-color: #0072ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003542}}
+.popover.blue-title .popover-title {
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003547}}
+.medialib {
+  width: 644px;
+  height: 403px;
+  left: 651px;
+  top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003552}}
+.medialib.withPlaceholder {
+  width: 895px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003555}}
+.medialib .dir {
+  margin-top: 22px;
+  margin-bottom: 20px;
+  padding: 0 10px 0 30px;
+  width: 151px;
+  height: 360px;
+  float: left;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000330}}
+.medialib .dir::-webkit-scrollbar {
+  width: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000333}}
+.medialib .dir::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(11.28px, transparent), color-stop(12px, #000000), color-stop(12px, #000000), color-stop(12.72px, transparent), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: -moz-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: -o-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000344}}
+.medialib .dir::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(radial, 50%, 0, 50%, 24, color-stop(0%, #9f9ea3), color-stop(40.0%, #8f9aa8), color-stop(45%, rgba(0, 0, 0, 0.2)), color-stop(55.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: -moz-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: -o-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  min-height: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003565}}
+.medialib .dir ul, .medialib .dir li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003571}}
+.medialib .dir li {
+  width: 100%;
+  margin-bottom: 17px;
+  padding: 0 0 0 9px;
+  background: url(../img/dir-open.png) -11px 6px no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003576}}
+.medialib .dir li span {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  font-size: 12px;
+  height: 13px;
+  line-height: 13px;
+  width: 100%;
+  padding: 0 0 0 20px;
+  cursor: pointer;
+  background: url(../img/dir.png) 0px -23px no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003585}}
+.medialib .dir li span:hover {
+  color: #4b4b49;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003589}}
+.medialib .dir li.active {
+  background: url(../img/dir-open.png) 0px 6px no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003591}}
+.medialib .dir li.active span {
+  background: url(../img/dir.png) 0px 0px no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003595}}
+.medialib .dir li.active li span {
+  background: url(../img/dir.png) 0px -23px no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003598}}
+.medialib .dir li.active li.active {
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003600}}
+.medialib .dir li.active li.active span {
+  background: url(../img/dir.png) 0px 0px no-repeat;
+  color: #4b4b49;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003607}}
+.medialib .dir li ul {
+  border-left: 1px solid #97989a;
+  margin-left: 8px;
+  margin-top: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003611}}
+.medialib .dir li ul li {
+  margin-top: 8px;
+  margin-bottom: 0;
+  background: none;
+  height: 13px;
+  line-height: 13px;
+  width: 100px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003619}}
+.medialib .dir li ul li .stick {
+  position: absolute;
+  width: 10px;
+  left: -1px;
+  top: 7px;
+  height: 0px;
+  background: #DFDFDF;
+  border-top: 1px solid #97989A;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003629}}
+.medialib .dir li ul li:last-child .stick {
+  height: 6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003637}}
+.medialib .main {
+  width: 425px;
+  height: 360px;
+  float: left;
+  margin: 22px 14px 20px 0;
+  padding: 0;
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000330}}
+.medialib .main::-webkit-scrollbar {
+  width: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000333}}
+.medialib .main::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(11.28px, transparent), color-stop(12px, #000000), color-stop(12px, #000000), color-stop(12.72px, transparent), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: -moz-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: -o-linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+  background: linear-gradient(left, transparent 0%, transparent 11.28px, #000000 12px, #000000 12px, transparent 12.72px, transparent 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/mixin\.scss}line{font-family:\0000344}}
+.medialib .main::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(radial, 50%, 0, 50%, 24, color-stop(0%, #9f9ea3), color-stop(40.0%, #8f9aa8), color-stop(45%, rgba(0, 0, 0, 0.2)), color-stop(55.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: -moz-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: -o-radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  background: radial-gradient(center, circle cover, #9f9ea3 0%, #8f9aa8 9.6px, rgba(0, 0, 0, 0.2) 10.8px, rgba(0, 0, 0, 0) 13.2px, rgba(0, 0, 0, 0) 24px);
+  min-height: 24px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003647}}
+.filter {
+  list-style: none;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003650}}
+.filter li {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003652}}
+.filter li a {
+  display: inline-block;
+  text-align: center;
+  height: 22px;
+  line-height: 22px;
+  width: 130px;
+  margin-right: 1px;
+  background-color: #ececec;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFECECEC', endColorstr='#FFCACACB');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ececec), color-stop(100%, #cacacb));
+  background-image: -webkit-linear-gradient(top, #ececec 0%, #cacacb 100%);
+  background-image: -moz-linear-gradient(top, #ececec 0%, #cacacb 100%);
+  background-image: -o-linear-gradient(top, #ececec 0%, #cacacb 100%);
+  background-image: linear-gradient(top, #ececec 0%, #cacacb 100%);
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  font-size: 12px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003665}}
+.filter li a.active, .filter li a:hover {
+  background-color: #7f8081;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF7F8081', endColorstr='#FF97989A');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(2%, #7f8081), color-stop(100%, #97989a));
+  background-image: -webkit-linear-gradient(top, #7f8081 2%, #97989a 100%);
+  background-image: -moz-linear-gradient(top, #7f8081 2%, #97989a 100%);
+  background-image: -o-linear-gradient(top, #7f8081 2%, #97989a 100%);
+  background-image: linear-gradient(top, #7f8081 2%, #97989a 100%);
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003674}}
+.select-media {
+  margin-left: -4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003676}}
+.select-media li {
+  float: left;
+  text-align: center;
+  width: 96px;
+  margin: 18px 5px 0 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003683}}
+.select-media li label {
+  white-space: nowrap;
+  margin-bottom: 2px;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding-left: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003693}}
+.select-media li label::after {
+  display: block;
+  margin: 8px auto 0;
+  text-align: center;
+  border: 4px solid #dfdfdf;
+  width: 14px;
+  height: 14px;
+  content: " ";
+  border-radius: 11px;
+  box-shadow: 0px 0px 1px 1px #9D9EA0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003706}}
+.select-media li:hover label, .select-media li.active label {
+  color: #4b4b49;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003708}}
+.select-media li:hover label::after, .select-media li.active label::after {
+  box-shadow: 0px 0px 1px 1px #4b4b49;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003713}}
+.select-media li input:checked + label {
+  color: #4b4b49;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003715}}
+.select-media li input:checked + label::after {
+  box-shadow: 0px 0px 1px 1px #4b4b49;
+  background-color: #4b4b49;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003721}}
+.select-media img {
+  width: 88px;
+  height: 54px;
+  border-radius: 3px;
+  clear: both;
+  box-shadow: 2px 2px 7px #b1b1b1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003728}}
+.select-media .audio {
+  width: 88px;
+  height: 54px;
+  display: block;
+  background: url(../img/audio.png) no-repeat -68px center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003733}}
+.select-media .audio.active {
+  background-position: 27px center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003737}}
+.select-media .audio_controls {
+  display: inline-block;
+  margin: 10px 0 5px 1px;
+  border: 1px solid #999999;
+  border-radius: 9px;
+  height: 8px;
+  width: 88px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003745}}
+.select-media .audio_controls .position {
+  display: inline-block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 1px;
+  left: 1px;
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003758}}
+.search-result dl {
+  padding: 19px;
+  border-bottom: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003763}}
+.search-result dl:last-child {
+  border-bottom: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003766}}
+.search-result dl:nth-child(even) {
+  background-color: #eeeeee;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003769}}
+.search-result dl dt, .search-result dl dd {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003772}}
+.search-result dl dt {
+  padding-bottom: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003775}}
+.search-result dl dd {
+  padding-bottom: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003777}}
+.search-result dl dd strong {
+  color: #000;
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003781}}
+.search-result dl dd a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003788}}
+.themes {
+  list-style: none;
+  margin: 50px;
+  float: left;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003793}}
+.themes li {
+  float: left;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003796}}
+.themes li a {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003800}}
+.themes li.active a {
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003806}}
+.tab-content {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003809}}
+p.illustration {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003812}}
+.colon_title, .colon_number {
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003815}}
+.divscript {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003818}}
+.preloader {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003823}}
+.placeholders {
+  float: left;
+  width: 240px;
+  padding: 20px 0;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003828}}
+.placeholders h2 {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: #97989a;
+  font-weight: bold;
+  font-size: 16px;
+  color: #4b4b49;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003837}}
+.placeholders .page_placeholders {
+  position: relative;
+  border: 1px solid #97989a;
+  border-radius: 5px;
+  width: 181px;
+  height: 229px;
+  padding: 18px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003845}}
+.placeholders .page_placeholders li {
+  width: 78px;
+  height: 51px;
+  padding: 0;
+  cursor: pointer;
+  background: #97989a;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF97989A', endColorstr='#FF555354');
+  background-image: -webkit-linear-gradient(32deg, rgba(151, 151, 151, 0) 0%, rgba(151, 151, 151, 0) 49%, rgba(85, 83, 84, 0.5) 50%, rgba(151, 151, 151, 0) 52%, rgba(151, 151, 151, 0) 100%), -webkit-linear-gradient(-33deg, rgba(151, 151, 151, 0) 0%, rgba(151, 151, 151, 0) 49%, rgba(85, 83, 84, 0.5) 50%, rgba(151, 151, 151, 0) 52%, rgba(151, 151, 151, 0) 100%);
+  background-image: -moz-linear-gradient(32deg, rgba(151, 151, 151, 0) 0%, rgba(151, 151, 151, 0) 49%, rgba(85, 83, 84, 0.5) 50%, rgba(151, 151, 151, 0) 52%, rgba(151, 151, 151, 0) 100%), -moz-linear-gradient(-33deg, rgba(151, 151, 151, 0) 0%, rgba(151, 151, 151, 0) 49%, rgba(85, 83, 84, 0.5) 50%, rgba(151, 151, 151, 0) 52%, rgba(151, 151, 151, 0) 100%);
+  background-image: -o-linear-gradient(32deg, rgba(151, 151, 151, 0) 0%, rgba(151, 151, 151, 0) 49%, rgba(85, 83, 84, 0.5) 50%, rgba(151, 151, 151, 0) 52%, rgba(151, 151, 151, 0) 100%), -o-linear-gradient(-33deg, rgba(151, 151, 151, 0) 0%, rgba(151, 151, 151, 0) 49%, rgba(85, 83, 84, 0.5) 50%, rgba(151, 151, 151, 0) 52%, rgba(151, 151, 151, 0) 100%);
+  background-image: linear-gradient(32deg, rgba(151, 151, 151, 0) 0%, rgba(151, 151, 151, 0) 49%, rgba(85, 83, 84, 0.5) 50%, rgba(151, 151, 151, 0) 52%, rgba(151, 151, 151, 0) 100%), linear-gradient(-33deg, rgba(151, 151, 151, 0) 0%, rgba(151, 151, 151, 0) 49%, rgba(85, 83, 84, 0.5) 50%, rgba(151, 151, 151, 0) 52%, rgba(151, 151, 151, 0) 100%);
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003874}}
+.placeholders .page_placeholders li:hover, .placeholders .page_placeholders li.active {
+  background: #0072ff;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF0072FF', endColorstr='#FF000000');
+  background-image: -webkit-linear-gradient(32deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%), -webkit-linear-gradient(-33deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(32deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%), -moz-linear-gradient(-33deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(32deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%), -o-linear-gradient(-33deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(32deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%), linear-gradient(-33deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003897}}
+.placeholders .page_placeholders li.plholder1 {
+  top: 18px;
+  left: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003901}}
+.placeholders .page_placeholders li.plholder2 {
+  top: 18px;
+  right: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003905}}
+.placeholders .page_placeholders li.plholder3 {
+  bottom: 18px;
+  left: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003909}}
+.placeholders .page_placeholders li.plholder4 {
+  bottom: 18px;
+  right: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003913}}
+.placeholders .page_placeholders li.plholder5 {
+  top: 105px;
+  left: 70px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003919}}
+.placeholders .btn {
+  margin: 20px 0 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003923}}
+.book-cover-btn, .theme-btn {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px 14px;
+  font-size: 12px;
+  display: inline-block;
+  clear: both;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003932}}
+.book-cover-btn.selected, .theme-btn.selected {
+  background: #eee;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003936}}
+.go_edit {
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003943}}
+.properties {
+  position: absolute;
+  left: -1px;
+  background-color: #3b3c3e;
+  border-top: 1px solid #494949;
+  border-left: 1px solid #494949;
+  border-right: 1px solid #494949;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003952}}
+.properties em {
+  display: inline-block;
+  width: 100%;
+  color: #97989a;
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  font-style: normal;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003961}}
+.properties em:hover, .properties em.selected {
+  color: #bebebf;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003967}}
+.page .container {
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003969}}
+.page .container h4 {
+  font-weight: bold;
+  padding: 20px 50px;
+  font-size: 24px;
+  line-height: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003976}}
+.page .container p {
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003980}}
+.page .container p.epigraph {
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003986}}
+.selected_blue {
+  box-shadow: inset 0px 0px 0px 1px #0072ff, inset 0px 0px 0 5000px #b2d4ff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003990}}
+.selected_red {
+  box-shadow: inset 0px 0px 0px 1px #ff0000, inset 0px 0px 0px 5000px #ffb2b2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003994}}
+.selected_red_border {
+  box-shadow: inset 0px 0px 0px 1px #ff0000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\00003998}}
+.media_pic {
+  clear: right;
+  display: inline-block;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031002}}
+.media_pic img {
+  padding: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031005}}
+.media_pic .gear {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 18px;
+  height: 17px;
+  background: url("../img/gear.png") no-repeat top left;
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031016}}
+.media_pic .gear:hover, .media_pic .gear.active {
+  background: url("../img/gear.png") no-repeat bottom left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031021}}
+.media_pic.selected_red .gear {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031025}}
+.media_pic ul {
+  position: absolute;
+  top: 28px;
+  left: 10px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031033}}
+.media_pic ul li {
+  padding: 5px 10px;
+  border-bottom: 1px dashed #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031036}}
+.media_pic ul li:last-child {
+  border-bottom: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031040}}
+.media_pic ul a {
+  color: #6d6e71;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031051}}
+.drop_area {
+  width: 895px;
+  height: 362px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 4px 4px 8px 4px #000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031060}}
+.drop_area p {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 210px;
+  color: #4b4b49;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031067}}
+.upload_book {
+  margin-top: 32px;
+  color: #fff;
+  font-size: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031072}}
+.upload_files {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031078}}
+.tbl-cell {
+  display: table-cell;
+  width: 895px;
+  height: 362px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/OS\/verstka\/sass\/main\.scss}line{font-family:\000031083}}
+.vertalign-top {
+  vertical-align: middle;
+}

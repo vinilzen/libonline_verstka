@@ -1,0 +1,112 @@
+doctype html
+html
+  head
+      meta charset="utf-8"
+      title LO - Upload
+      link href="./css/main.css" rel="stylesheet"
+      script data-main="js/app" src="./js/lib/require.js"
+      javascript:
+        var cSpeed=9;
+        var cWidth=76;
+        var cHeight=76;
+        var cTotalFrames=12;
+        var cFrameWidth=76;
+        var cImageSrc='/img/sprites.png';
+        
+        var cImageTimeout=false;
+        var cIndex=0;
+        var cXpos=0;
+        var cPreloaderTimeout=false;
+        var SECONDS_BETWEEN_FRAMES=0;
+        
+        function startAnimation(){
+          
+          document.getElementById('preloderUpload').style.backgroundImage='url('+cImageSrc+')';
+          document.getElementById('preloderUpload').style.width=cWidth+'px';
+          document.getElementById('preloderUpload').style.height=cHeight+'px';
+          
+          //FPS = Math.round(100/(maxSpeed+2-speed));
+          FPS = Math.round(100/cSpeed);
+          SECONDS_BETWEEN_FRAMES = 1 / FPS;
+          
+          cPreloaderTimeout=setTimeout('continueAnimation()', SECONDS_BETWEEN_FRAMES/1000);
+          
+        }
+        
+        function continueAnimation(){
+          
+          cXpos += cFrameWidth;
+          //increase the index so we know which frame of our animation we are currently on
+          cIndex += 1;
+           
+          //if our cIndex is higher than our total number of frames, we're at the end and should restart
+          if (cIndex >= cTotalFrames) {
+            cXpos =0;
+            cIndex=0;
+          }
+          
+          if(document.getElementById('preloderUpload'))
+            document.getElementById('preloderUpload').style.backgroundPosition=(-cXpos)+'px 0';
+          
+          cPreloaderTimeout=setTimeout('continueAnimation()', SECONDS_BETWEEN_FRAMES*1000);
+        }
+        
+        function stopAnimation(){//stops animation
+          clearTimeout(cPreloaderTimeout);
+          cPreloaderTimeout=false;
+        }
+        
+        function imageLoader(s, fun)//Pre-loads the sprites image
+        {
+          clearTimeout(cImageTimeout);
+          cImageTimeout=0;
+          genImage = new Image();
+          genImage.onload=function (){cImageTimeout=setTimeout(fun, 0)};
+          genImage.onerror=new Function('alert(\'Could not load the image\')');
+          genImage.src=s;
+        }
+        
+        //The following code starts the animation
+        new imageLoader(cImageSrc, 'startAnimation()');
+  body
+    #top
+      .controls
+        span.bar
+      .row
+        .win-control
+          span.ico.dashboard
+        .personal-panel
+          .account
+            span 
+              |
+                На счету:
+              em 1 800 Р
+          .msg
+            span
+              |
+                Новых:
+              em 12
+          .login
+            .dropdown
+              span
+                |
+                  Александр
+                b.caret
+              ul
+                li 1
+                li 2
+
+    #upload
+      .row
+        h1.upload_files Загрузка файла
+      .row
+        .drop_area
+          .tbl-cell.vertalign-top#start_up_book
+            p Перетащите в эту область файл в формате .docx или загрузите с компьютера
+          .tbl-cell.vertalign-top#hover_up_book.dark
+            p Перетащите файл в эту область 
+            img src="/img/drop_book.png"
+          / .tbl-cell.vertalign-top#process_up_book.dark
+          /   p Подождите, пожалуйста. Идет загрузка файла на сервер
+          /   span#preloderUpload
+        .button.upload_book Загрузить с компьютера

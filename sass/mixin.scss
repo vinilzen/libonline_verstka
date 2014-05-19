@@ -1,12 +1,97 @@
+//
+// Mixins
+// --------------------------------------------------
+
+
+// Utilities
+// -------------------------
+
+// Clearfix
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+
+// CSS3 PROPERTIES
+// --------------------------------------------------
+
+// Single side border-radius
+@mixin border-top-radius($radius) {
+  border-top-right-radius: $radius;
+   border-top-left-radius: $radius;
+}
+@mixin border-right-radius($radius) {
+  border-bottom-right-radius: $radius;
+     border-top-right-radius: $radius;
+}
+@mixin border-bottom-radius($radius) {
+  border-bottom-right-radius: $radius;
+   border-bottom-left-radius: $radius;
+}
+@mixin border-left-radius($radius) {
+  border-bottom-left-radius: $radius;
+     border-top-left-radius: $radius;
+}
+
+@mixin btn-gradient {  
+  background-color:#a3a4a6;
+  background: linear-gradient(to top, #97989a 50%, #a3a4a6 50%);
+}
+@mixin btn-gradient-active {  
+  background-color:#60605e;
+  background: linear-gradient(to top, #4b4b49 50%, #60605e 50%);
+}
+
+
+// Panels
+// -------------------------
+@mixin panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
+  border-color: $border;
+
+  & > .panel-heading {
+    color: $heading-text-color;
+    background-color: $heading-bg-color;
+    border-color: $heading-border;
+
+    + .panel-collapse > .panel-body {
+      border-top-color: $border;
+    }
+  }
+  & > .panel-footer {
+    + .panel-collapse > .panel-body {
+      border-bottom-color: $border;
+    }
+  }
+}
+
 
 @mixin em-link() {
 	display: inline-block;
 	span{
 		display: inline-block;
-		em {
+		a, em {
 			display: inline-block;
 			margin-left: 3px;				
 			cursor: pointer;
+      text-decoration: none;
 		}
 	}
 }
@@ -28,15 +113,15 @@
 
 @mixin circle-scroll($radius) {
 	&::-webkit-scrollbar {
-		width: $radius;
+		width: $radius+2;
 	}
 	&::-webkit-scrollbar-track {
 		@include background(linear-gradient(left,
 						transparent 0%,
-						transparent $radius*0.47,
-						#000000 $radius*0.5,
-						#000000 $radius*0.5,
-						transparent $radius*0.53,
+						transparent floor($radius*0.5),
+						#000000 $radius*0.52,
+						#000000 $radius*0.52,
+						transparent $radius*0.55,
 						transparent 100%)
 				);
 	}
@@ -45,9 +130,9 @@
 		@include background(
 			radial-gradient(center, circle cover, 
 				#9f9ea3 0%,
-				#8f9aa8 $radius*0.4,
-				rgba(0,0,0,0.2) $radius*0.45,
-				rgba(0,0,0,0) $radius*0.55,
+				#8f9aa8 ceil($radius*0.35),
+				rgba(0,0,0,0.2) ceil($radius*0.52),
+				rgba(0,0,0,0) ceil($radius*0.52),
 				rgba(0,0,0,0) $radius
 			)
 		);
@@ -58,6 +143,79 @@
 @mixin blue-gradient {
 	@include filter-gradient(#0050b4, $blue-bgr, vertical);
 	@include background-image(linear-gradient(top, #0050b4 0%,$blue-bgr 100%));
+}
+
+// Drop shadows
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+
+// Transitions
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
+// Animations
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+          animation: $animation;
+}
+@mixin animation-name($name) {
+  -webkit-animation-name: $name;
+          animation-name: $name;
+}
+@mixin animation-duration($duration) {
+  -webkit-animation-duration: $duration;
+          animation-duration: $duration;
+}
+@mixin animation-timing-function($timing-function) {
+  -webkit-animation-timing-function: $timing-function;
+          animation-timing-function: $timing-function;
+}
+@mixin animation-delay($delay) {
+  -webkit-animation-delay: $delay;
+          animation-delay: $delay;
+}
+@mixin animation-iteration-count($iteration-count) {
+  -webkit-animation-iteration-count: $iteration-count;
+          animation-iteration-count: $iteration-count;
+}
+@mixin animation-direction($direction) {
+  -webkit-animation-direction: $direction;
+          animation-direction: $direction;
+}
+
+@mixin gradient-striped($color: #555, $angle: 45deg) {
+  background-color: $color;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, rgba(0,0,0, 0.0) 25%, rgba(0,0,0, 0.0) 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, rgba(0,0,0, 0.0) 75%, rgba(0,0,0, 0.0));
+}
+
+
+// Typography
+// -------------------------
+@mixin text-emphasis-variant($color) {
+  color: $color;
+  a:hover {
+    color: darken($color, 10%);
+  }
+}
+
+// Progress bars
+// -------------------------
+@mixin progress-bar-variant($color) {
+  background-color: $color;
+  .progress-striped & {
+    @include gradient-striped();
+  }
 }
 
 .clearfix {
@@ -71,4 +229,44 @@
 }
 .dn, .hide {
 	display: none;
+}
+
+@mixin diagonalStripes($color: #555, $size: 100px, $angle: 0deg) {
+  background-size: $size $size;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, 
+          color-stop(.25, $color), 
+          color-stop(.25, transparent), 
+          color-stop(.5, transparent), 
+          color-stop(.5, $color), 
+          color-stop(.75, $color), 
+          color-stop(.75, transparent), 
+          to(transparent)
+  );
+  background-image: -webkit-linear-gradient($angle, 
+          $color 25%, 
+          transparent 25%, 
+          transparent 50%, 
+          $color 50%, 
+          $color 75%, 
+          transparent 75%, 
+          transparent
+  );
+  background-image: -moz-linear-gradient($angle, 
+          $color 25%, 
+          transparent 25%, 
+          transparent 50%, 
+          $color 50%, 
+          $color 75%, 
+          transparent 75%, 
+          transparent
+  );
+  background-image: linear-gradient($angle, 
+          $color 25%, 
+          transparent 25%, 
+          transparent 50%, 
+          $color 50%, 
+          $color 75%, 
+          transparent 75%, 
+          transparent
+  );
 }

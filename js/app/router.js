@@ -5,6 +5,7 @@ define(function (require) {
     var $           = require('jquery'),
         Backbone    = require('backbone'),
         MediaLibIcosView = require('app/views/MediaLibIcos'),
+        // Book
         $body = $('body'),
         $content = $('.media ul'),
         mediaLibIcos = new MediaLibIcosView({el: $content});
@@ -17,7 +18,6 @@ define(function (require) {
         },
 
         home: function () {
-            mediaLibIcos.delegateEvents(); // delegate events when the view is recycled
             mediaLibIcos.render();
         },
 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			LO - Upload
+		</title>
+		<link href="./css/main.css" rel="stylesheet">
+		<script data-main="js/app" src="./js/lib/require.js"></script>
+		<script type="text/javascript">
+			var cSpeed=9;
+			var cWidth=76;
+			var cHeight=76;
+			var cTotalFrames=12;
+			var cFrameWidth=76;
+			var cImageSrc='/img/sprites.png';
+			
+			var cImageTimeout=false;
+			var cIndex=0;
+			var cXpos=0;
+			var cPreloaderTimeout=false;
+			var SECONDS_BETWEEN_FRAMES=0;
+			
+			function startAnimation(){
+			
+			  document.getElementById('preloderUpload').style.backgroundImage='url('+cImageSrc+')';
+			  document.getElementById('preloderUpload').style.width=cWidth+'px';
+			  document.getElementById('preloderUpload').style.height=cHeight+'px';
+			
+			  //FPS = Math.round(100/(maxSpeed+2-speed));
+			  FPS = Math.round(100/cSpeed);
+			  SECONDS_BETWEEN_FRAMES = 1 / FPS;
+			
+			  cPreloaderTimeout=setTimeout('continueAnimation()', SECONDS_BETWEEN_FRAMES/1000);
+			
+			}
+			
+			function continueAnimation(){
+			
+			  cXpos += cFrameWidth;
+			  //increase the index so we know which frame of our animation we are currently on
+			  cIndex += 1;
+			
+			  //if our cIndex is higher than our total number of frames, we're at the end and should restart
+			  if (cIndex >= cTotalFrames) {
+			    cXpos =0;
+			    cIndex=0;
+			  }
+			
+			  if(document.getElementById('preloderUpload'))
+			    document.getElementById('preloderUpload').style.backgroundPosition=(-cXpos)+'px 0';
+			
+			  cPreloaderTimeout=setTimeout('continueAnimation()', SECONDS_BETWEEN_FRAMES*1000);
+			}
+			
+			function stopAnimation(){//stops animation
+			  clearTimeout(cPreloaderTimeout);
+			  cPreloaderTimeout=false;
+			}
+			
+			function imageLoader(s, fun)//Pre-loads the sprites image
+			{
+			  clearTimeout(cImageTimeout);
+			  cImageTimeout=0;
+			  genImage = new Image();
+			  genImage.onload=function (){cImageTimeout=setTimeout(fun, 0)};
+			  genImage.onerror=new Function('alert(\'Could not load the image\')');
+			  genImage.src=s;
+			}
+			
+			//The following code starts the animation
+			new imageLoader(cImageSrc, 'startAnimation()');
+		</script>
+	</head>
+	<body>
+		<div id="top">
+			<div class="controls">
+				<span class="bar"></span>
+			</div>
+			<div class="row">
+				<div class="win-control">
+					<span class="ico dashboard"></span>
+				</div>
+				<div class="personal-panel">
+					<div class="account">
+						<span>На счету:<em>1 800 Р</em></span>
+					</div>
+					<div class="msg">
+						<span>Новых:<em>12</em></span>
+					</div>
+					<div class="login">
+						<div class="dropdown">
+							<span>Александр<b class="caret"></b></span>
+							<ul>
+								<li>
+									1
+								</li>
+								<li>
+									2
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="upload">
+			<div class="row">
+				<h1 class="upload_files">
+					Загрузка файла
+				</h1>
+			</div>
+			<div class="row">
+				<div class="drop_area">
+					<div class="tbl-cell vertalign-top" id="start_up_book">
+						<p>
+							Перетащите в эту область файл в формате .docx или загрузите с компьютера
+						</p>
+					</div>
+					<div class="tbl-cell vertalign-top dark" id="hover_up_book">
+						<p>
+							Перетащите файл в эту область 
+						</p>
+						<img src="/img/drop_book.png">
+					</div>
+				</div>
+				<div class="button upload_book">
+					Загрузить с компьютера
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

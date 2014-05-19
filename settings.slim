@@ -92,61 +92,6 @@ html
       .content.page_container
         .page
           .container
-            h1.toc_title Оглавление
-            ul.toc
-              li 
-                p глава I. Преступление
-                span.dotted_line
-                span.toc_num_page 1
-                ul
-                  li 
-                    p Кто виноват?
-                    span.dotted_line
-                    span.toc_num_page 3
-                  li 
-                    p Что делать?
-                    span.dotted_line
-                    span.toc_num_page 5
-                    ul
-                      li 
-                        p Наброски и планы
-                        span.dotted_line
-                        span.toc_num_page 8
-                      li 
-                        p подготовка и экипировка
-                        span.dotted_line
-                        span.toc_num_page 12
-                      li 
-                        p решительные действия
-                        span.dotted_line
-                        span.toc_num_page 13
-              li 
-                p глава II. наказание
-                span.dotted_line
-                span.toc_num_page 16
-                ul
-                  li
-                    p Принципы назначения
-                    span.dotted_line
-                    span.toc_num_page 19
-                  li
-                    p Условия отмены
-                    span.dotted_line
-                    span.toc_num_page 21
-                  li
-                    p Искреннее раскаяние
-                    span.dotted_line
-                    span.toc_num_page 24
-              li
-                p глава III. Завершение
-                span.dotted_line
-                span.toc_num_page 25
-              li
-                p Библиография
-                span.dotted_line
-                span.toc_num_page 27
-        .page
-          .container
             h2 Main content
             - 1.times do |i|
               p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi eget elit. Donec pulvinar. Fusce non est ac libero blandit laoreet. Pellentesque iaculis erat. Cras ullamcorper. Vivamus et nibh. Quisque vel leo vitae felis hendrerit fermentum. Donec consectetuer, nunc id mattis elementum, lacus ligula fringilla leo, quis varius lacus turpis sit amet massa. Morbi accumsan ante suscipit ipsum. Curabitur non tellus nec metus venenatis iaculis. Donec tempor nunc. Mauris sit amet erat. Vestibulum sed nulla ac nisl dapibus porta. Praesent a nisi quis nisl cursus tempor. Praesent semper laoreet nisl. Donec id urna.
@@ -309,3 +254,154 @@ html
             img src="./img/example.jpg"
             input type="radio" hidden="hidden" name="media-pic" id="media-pic-#{i}"
             label for="media-pic-#{i}" #{i+1}.jpg
+
+
+<!-- Modal -->
+#mySettingsModal.modal.fade.in style="display:block;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  .modal-dialog
+    .modal-content
+      .modal-body
+        h4 Название книги
+        h1 
+          |
+            Человек амфибия
+          a.change Изменить
+        h3 Тэги
+
+        .tags
+          .simulate-input
+            .tag
+              |
+                Америка
+              button class="close" title="Удалить" &times;
+            .tag
+              |
+                Арабский
+              button class="close" title="Удалить" &times;
+            input
+            i.ico-list
+            .all-tags.dn
+              p.text-danger Нажмите на слово, для выбора тега
+              p.text-muted Добавлено: 2 из 5
+              hr
+              ul
+                li Август
+                li Австралия
+                li Автограф
+                li Автомойка
+                li Автостоп
+                li Агент
+                li Азия
+                li Актер
+                li Актив
+                li Алкоголь
+                li Альбом
+                li.selected Америка
+                li Ангел
+                li Англия
+                li Ансамбль
+                li Апрель
+                li.selected Арабский
+                li Армия
+                li Архив
+                li Архитектура
+                li Ассистент
+                li Армия
+                li Архив
+                li Архитектура
+                li Ассистент
+                li Армия
+                li Архив
+                li Архитектура
+                li Ассистент
+                li Армия
+                li Архив
+                li Архитектура
+                li Ассистент
+                li Армия
+                li Архив
+                li Архитектура
+                li Ассистент
+              .abc
+                p 
+                  a А 
+                  a Б 
+                  a В 
+                  a Г 
+                  a Д 
+                  a Е 
+                  a Ж 
+                  a З 
+                  a И 
+                  a К 
+                  a Л 
+                  a М 
+                  a Н 
+                  a О 
+                  a П 
+                  a Р 
+                  a С 
+                  a Т 
+                  a У 
+                  a Ф 
+                  a Х 
+                  a Ц 
+                  a Ч 
+                  a Ш 
+                  a Щ 
+                  a Э 
+                  a Ю 
+                  a Я
+              hr
+              .addTagLblt Добавить теги
+              .clearSelected Очистить выбранное
+              .clearfix
+        .theme
+          h3 Шаблон
+          .preview_theme
+            .prev-page
+              img src="/img/sempl_prev1.png"
+            .prev-page
+              img src="/img/sempl_prev2.png"
+            .prev-page
+              img src="/img/sempl_prev3.png"
+            a.change Изменить
+        .dropcaps
+          h3 Буквицы
+          .option.custom-radio-input
+            input id="option-dropcaps-true" name="option-dropcaps" type="radio"
+            label for="option-dropcaps-true" Установить в тексте буквицы
+            input id="option-dropcaps-false" name="option-dropcaps" type="radio" checked="checked" 
+            label for="option-dropcaps-false" Не устанавливать в тексте буквицы
+          .clearfix
+        .vignette
+          h3 Виньетки
+          .option.custom-radio-input
+            input id="option-vignette-true" name="option-vignette" type="radio"
+            label for="option-vignette-true" Установить виньетки
+            input id="option-vignette-false" name="option-vignette" type="radio" checked="checked" 
+            label for="option-vignette-false" Не устанавливать виньетки
+          .clearfix
+        .colontitle.block-centre
+          .colotitles
+            a.blue-button
+              |
+                Вид колонтитула
+              span.caret
+            ul
+              li 
+                a Без колонтитулов
+              li 
+                a Стр., автор, название
+              li 
+                a Стр., название
+              li 
+                a Стр., автор
+        .block-centre
+          a.button Принять
+
+
+
+
+
+.modal-backdrop.fade.in.settings
